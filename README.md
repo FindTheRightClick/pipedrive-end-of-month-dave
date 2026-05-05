@@ -46,21 +46,6 @@ pip install httpx python-dotenv
 
 Create a `.env` file in the same folder as the scripts. Use this as your template:
 
-```
-# Pipedrive
-PIPEDRIVE_API_TOKEN=your_pipedrive_api_token_here
-
-# Output directory — where CSVs will be saved on this machine
-SNAPSHOT_OUTPUT_DIR=C:\your\output\folder\here
-
-# SMTP — smtp.com relay
-SMTP_HOST=send.smtp.com
-SMTP_PORT=587
-SMTP_USER=scan_rightclick
-SMTP_PASSWORD=your_smtp_password_here
-SMTP_FROM=pipedrivereports@therightclick.com
-```
-
 **Two things you must fill in before running:**
 - `PIPEDRIVE_API_TOKEN` — found in Pipedrive under Settings → Personal Preferences → API
 - `SNAPSHOT_OUTPUT_DIR` — the folder on this machine where CSVs should be saved (will be created automatically if it doesn't exist)
