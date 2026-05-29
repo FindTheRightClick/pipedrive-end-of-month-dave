@@ -12,4 +12,4 @@ New-Item -ItemType Directory -Path "$destination\output" -Force
 Write-Host "Deploying from $Source to $destination"
 Copy-Item -Path $Source\* -Destination $destination -Recurse -Force
 
-Write-Host "Deploy complete."
+Write-Host "Deploy complete.."
