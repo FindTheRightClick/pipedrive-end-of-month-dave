@@ -7,7 +7,7 @@ if (Test-Path $destination) {
     Remove-Item -Path $destination\* -Recurse -Force
 }
 
-New-Item -ItemType Directory -Path "$destination\logs" -Force
+New-Item -ItemType Directory -Path "$destination\output" -Force
 
 Write-Host "Deploying from $Source to $destination"
 Copy-Item -Path $Source\* -Destination $destination -Recurse -Force
